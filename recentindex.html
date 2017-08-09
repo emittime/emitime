@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+
+<!--
+  Theme Name: Emitime
+  Theme URL: https://probootstrap.com/resto-free-restaurant-responsive-bootstrap-website-template
+  Author: ProBootstrap.com
+  Author URL: https://probootstrap.com
+  License: Released for free under the Creative Commons Attribution 3.0 license (probootstrap.com/license)
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Emitime</title>
+    <meta name="description" content="hi">
+    <meta name="keywords" content="hello">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Pinyon+Script" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles-merged.css">
+    <link rel="stylesheet" href="css/style.min.css">
+
+    <style>
+
+    .button {
+        border: none;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+
+    .buttonPanel {border-radius: 50%;}
+    </style>
+
+    <!--[if lt IE 9]>
+      <script src="js/vendor/html5shiv.min.js"></script>
+      <script src="js/vendor/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <!-- Fixed navbar -->
+
+    <nav class="navbar navbar-default navbar-fixed-top probootstrap-navbar">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html"> "Emitime"</a>
+        </div>
+
+        <div id="navbar-collapse" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class = "active"><a href="#" data-nav-section="welcome"><font face="prata" size = "4.5"><b>Welcome</b></font></a></li>
+            <li><a href="#" data-nav-section="Time"><font face="prata" size = "4.5"><b>Time</b></font></a></li>
+            <li><a href="#" data-nav-section="reservation"><font face="prata" size = "4.5"><b>Tips</b></font></a></li>
+            <li><a href="#" data-nav-section="events"><font face="prata" size = "4.5"><b>Take Care</b></font></a></li>
+            <li><a href="#" data-nav-section="contact"><font face="prata" size = "4.5"><b>About Us</b></font></a></li>
+            <li><a href="#" data-nav-section="contact"><font face="prata" size = "4.5"><b>Contact</b></font></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="flexslider" data-section="welcome">
+      <ul class="slides">
+        <li style="background-image: url(img/night.jpg)" class="overlay" data-stellar-background-ratio="0.5">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 col-md-offset-2">
+                <div class="probootstrap-slider-text text-center probootstrap-animate probootstrap-heading">
+                  <h1 class="primary-heading">Emitime</h1>
+                  <h3 class="secondary-heading">Time</h3>
+                  <p class="sub-heading"><font face="trocchi" size = "6">A self-help and time management tool for students</font></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li style="background-image: url(img/night.jpg)" class="overlay">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 col-md-offset-2">
+                <div class="probootstrap-slider-text text-center probootstrap-animate probootstrap-heading">
+                  <h1 class="primary-heading">Emitime</h1>
+                  <h3 class="secondary-heading">Take Care</h3>
+                  <p class="sub-heading"><font face="trocchi" size = "6">Keep track of your water intake and emotions</font></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </li>
+        <li style="background-image: url(img/night.jpg)" class="overlay">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 col-md-offset-2">
+                <div class="probootstrap-slider-text text-center probootstrap-animate probootstrap-heading">
+                  <h1 class="primary-heading">Emitime</h1>
+                  <h3 class="secondary-heading">Tips</h3>
+                  <p class="sub-heading"><font face="trocchi" size = "6">Healthy snack recipes and ideas</font></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="probootstrap-section probootstrap-bg-white">
+      <div class="container">
+
+        <!-- END row -->
+      </div>
+    </section>
+
+    <section class="probootstrap-section-bg overlay" style="background-image: url(img/night.jpg)" data-stellar-background-ratio="0.5" data-section="Time">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center probootstrap-animate">
+            <div class="probootstrap-heading">
+              <h2 class="primary-heading">Time</h2>
+              <h3 class="secondary-heading">To Do and Calendar</h3> <br><br><br><br><br><br>
+              <body>
+                <style>
+                  iframe {
+                    float: left;
+                  }
+                </style>
+                <iframe src="https://calendar.google.com/calendar/embed?title=Emitime%20Calendar&amp;height=600&amp;wkst=1&amp;bgcolor=%2333ccff&amp;ctz=America%2FPhoenix" style="border:solid 1px #777" width="500" height="400" frameborder="0" scrolling="no"></iframe>
+
+                <!--Add buttons to initiate auth sequence and sign out-->
+                <button id="authorize-button" style="display: none;">Authorize</button>
+                <button id="signout-button" style="display: none;">Sign Out</button>
+
+                <script type="text/javascript">
+                  // Client ID and API key from the Developer Console
+                  var CLIENT_ID = '1018774307638-rkqpscvg6pr5oftn81cs0088g4chvtsh.apps.googleusercontent.com';
+
+                  // Array of API discovery doc URLs for APIs used by the quickstart
+                  var DISCOVERY_DOCS = ["https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest"];
+
+                  // Authorization scopes required by the API; multiple scopes can be
+                  // included, separated by spaces.
+                  var SCOPES = "https://www.googleapis.com/auth/calendar.readonly";
+
+                  var authorizeButton = document.getElementById('authorize-button');
+                  var signoutButton = document.getElementById('signout-button');
+
+                  /**
+                   *  On load, called to load the auth2 library and API client library.
+                   */
+                  function handleClientLoad() {
+                    gapi.load('client:auth2', initClient);
+                  }
+
+                  /**
+                   *  Initializes the API client library and sets up sign-in state
+                   *  listeners.
+                   */
+                  function initClient() {
+                    gapi.client.init({
+                      discoveryDocs: DISCOVERY_DOCS,
+                      clientId: CLIENT_ID,
+                      scope: SCOPES
+                    }).then(function () {
+                      // Listen for sign-in state changes.
+                      gapi.auth2.getAuthInstance().isSignedIn.listen(updateSigninStatus);
+
+                      // Handle the initial sign-in state.
+                      updateSigninStatus(gapi.auth2.getAuthInstance().isSignedIn.get());
+                      authorizeButton.onclick = handleAuthClick;
+                      signoutButton.onclick = handleSignoutClick;
+                    });
+                  }
+
+                  /**
+                   *  Called when the signed in status changes, to update the UI
+                   *  appropriately. After a sign-in, the API is called.
+                   */
+                  function updateSigninStatus(isSignedIn) {
+                    if (isSignedIn) {
+                      authorizeButton.style.display = 'none';
+                      signoutButton.style.display = 'block';
+                      listUpcomingEvents();
+                    } else {
+                      authorizeButton.style.display = 'block';
+                      signoutButton.style.display = 'none';
+                    }
+                  }
+
+                  /**
+                   *  Sign in the user upon button click.
+                   */
+                  function handleAuthClick(event) {
+                    gapi.auth2.getAuthInstance().signIn();
+                  }
+
+                  /**
+                   *  Sign out the user upon button click.
+                   */
+                  function handleSignoutClick(event) {
+                    gapi.auth2.getAuthInstance().signOut();
+                  }
+
+                  /**
+                   * Append a pre element to the body containing the given message
+                   * as its text node. Used to display the results of the API call.
+                   *
+                   * @param {string} message Text to be placed in pre element.
+                   */
+                  function appendPre(message) {
+                    var pre = document.getElementById('content');
+                    var textContent = document.createTextNode(message + '\n');
+                    pre.appendChild(textContent);
+                  }
+
+                  /**
+                   * Print the summary and start datetime/date of the next ten events in
+                   * the authorized user's calendar. If no events are found an
+                   * appropriate message is printed.
+                   */
+                  function listUpcomingEvents() {
+                    gapi.client.calendar.events.list({
+                      'calendarId': 'primary',
+                      'timeMin': (new Date()).toISOString(),
+                      'showDeleted': false,
+                      'singleEvents': true,
+                      'maxResults': 10,
+                      'orderBy': 'startTime'
+                    }).then(function(response) {
+                      var events = response.result.items;
+                      appendPre('Upcoming events:');
+
+                      if (events.length > 0) {
+                        for (i = 0; i < events.length; i++) {
+                          var event = events[i];
+                          var when = event.start.dateTime;
+                          if (!when) {
+                            when = event.start.date;
+                          }
+                          appendPre(event.summary + ' (' + when + ')')
+                        }
+                      } else {
+                        appendPre('No upcoming events found.');
+                      }
+                    });
+                  }
+
+                </script>
+
+                <script async defer src="https://apis.google.com/js/api.js"
+                  onload="this.onload=function(){};handleClientLoad()"
+                  onreadystatechange="if (this.readyState === 'complete') this.onload()">
+                </script>
+                <iframe width="625" height="400" align="left" src="todolist.html">
+                </iframe>
+              </body>
+            </div>
+          </div>
+        </div>
+      </div>
+      <iframe src="https://www.w3schools.com">
+      </iframe>
+
+    </section>
+     <!-- probootstrap-bg-white -->
+    <section class="probootstrap-section">
+      <div class="container">
+        <div class="row">
+          <div class="probootstrap-cell-retro">
+            <div class="half">
+
+
+              </div>
+
+            </div>
+            <div class="half">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="probootstrap-section">
+      <div class="container">
+        <div class="row">
+          <div class="probootstrap-cell-retro">
+            <div class="half">
+
+
+              </div>
+
+            </div>
+            <div class="half">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="probootstrap-section-bg overlay" style="background-image: url(img/night.jpg)"  data-stellar-background-ratio="0.5"  data-section="Tips">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center probootstrap-animate">
+            <div class="probootstrap-heading">
+              <h2 class="primary-heading">Discover</h2>
+              <h3 class="secondary-heading">Tips</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <section class="probootstrap-section probootstrap-bg-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <ul class="Tips">
+
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <ul class="Tips">
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="probootstrap-section-bg overlay" style="background-image: url(img/night.jpg)"  data-stellar-background-ratio="0.5" data-section="reservation">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center probootstrap-animate">
+            <div class="probootstrap-heading">
+              <h2 class="primary-heading">Tips</h2>
+              <h3 class="secondary-heading">Healthy Snack Ideas</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="probootstrap-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-sm-4 probootstrap-animate">
+            <div class="probootstrap-block-image">
+              <figure><img src="img/ThaiQuinoaSalad.jpg" alt="Thai Quinoa Salad"></figure>
+              <div class="text">
+                <span class="date">August 2, 2017</span>
+                <h3><a href="#">Thai Quinoa Salad</a></h3>
+                <p>Colorful, and hearty enough to be a meal. Add in a healthy dressing, and it'll still be good tomorrow!</p>
+                <p class=""><a href="http://carrotsandcake.ca/thai-quinoa-salad/" class="probootstrap-custom-link link-sm">Recipe</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 probootstrap-animate">
+            <div class="probootstrap-block-image">
+              <figure><img src="img/toastwithtoppings.png" alt="Basic toast with a variety of toppings."></figure>
+              <div class="text">
+                <span class="date">August 2, 2017</span>
+                <h3><a href="#">Toast with Toppings</a></h3>
+                <p>These snacks are simply and easy to make, and will satisfy your cravings. All are under 175 calories!</p>
+                <p class=""><a href="https://www.buzzfeed.com/tashweenali/energy-boosting-breakfast-toasts?utm_term=.syervoNW9K#.sqM2deAL5K" class="probootstrap-custom-link link-sm">Recipes</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 probootstrap-animate">
+            <div class="probootstrap-block-image">
+              <figure><img src="img/italiansausagetortellini.png" alt="Free Bootstrap Template by ProBootstrap.com"></figure>
+              <div class="text">
+                <span class="date">August 2, 2017</span>
+                <h3><a href="#">Italian Sausage and Tortellini Soup</a></h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto provident qui tempore natus quos quibusdam soluta at.</p>
+                <p class=""><a href="http://www.thekitchn.com/recipe-italian-sausage-and-tortellini-soup-223635" class="probootstrap-custom-link link-sm">Recipe</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="probootstrap-section-bg overlay" style="background-image: url(img/night.jpg)"  data-stellar-background-ratio="0.5" data-section="events">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center probootstrap-animate">
+            <div class="probootstrap-heading">
+              <h2 class="primary-heading">Take Care</h2>
+              <h3 class="secondary-heading">How do you feel?</h3>
+              <h4 class="tertiary-heading"></h4>
+              <h4 class="tertiary-heading"></h4> <br>
+              <h4 class="tertiary-heading"></h4> <br>
+              <h4 class="tertiary-heading"></h4> <br>
+              <h4 class="tertiary-heading"></h4> <br>
+
+              <!-- happy Button -->
+              <div class="happybuttonPanel" id="happybuttonPanel"  align="left">
+                <button onclick="myHappyFunction()"> <img src="img/happy.png"></button>
+              </div>
+
+              <div id="happytextPanel" class="happytextPanel" align="right">
+              </div>
+
+              <script>
+              function myHappyFunction() {
+                  var x = document.getElementById('happytextPanel');
+              if( x.innerHTML == "Be happy. Be bright. Be you."){
+                x.innerHTML = "";
+                console.log("i am happy");
+              }
+              else{
+                x.innerHTML = "Be happy. Be bright. Be you.";
+              }
+              }
+
+              function msf() {
+                  var x = document.getElementById('sadtextPanel');
+                  // var btn = document.createElement("BUTTON");
+                //  document.body.appendChild(btn);
+
+                  if( x.innerHTML == "Remember that this too, shall pass. If you want to lighten up your mood, make a list of things you are grateful for. You can find more tips at:  at: https://www.buzzfeed.com/hnigatu/things-to-do-when-youre-feeling-down?utm_term=.dlLVNO5Wp2#.vr7RL7oj1P")
+                  {
+                    x.innerHTML = "";
+
+                  }
+                  else{
+                    x.innerHTML = "Remember that this too, shall pass. If you want to lighten up your mood, make a list of things you are grateful for. You can find more tips at: https://www.buzzfeed.com/hnigatu/things-to-do-when-youre-feeling-down?utm_term=.dlLVNO5Wp2#.vr7RL7oj1P";
+                  }
+              }
+              </script>
+            <!--  end of happy button -->
+
+            <!--  sad button -->
+            <div id="sadbuttonPanel" class="sadbuttonPanel" align="left">
+              <button onclick="msf()"> <img src="img/sadguy.png" height=85px width=105x></button>
+            </div>
+
+            <div id="sadtextPanel" class="sadtextPanel" align="right">
+            </div>
+
+            <script>
+
+            </script>
+            <!--  end of sad button -->
+
+            <!--  angry button -->
+            <div id="angrybuttonPanel" class="angrybuttonPanel" align="left">
+              <button onclick="myAngryFunction()"> <img src="img/angry.png" height=90px width=105x></button>
+            </div>
+
+            <div id="angrytextPanel" class="angrytextPanel" align="right">
+            </div>
+
+            <script>
+            function myAngryFunction() {
+                var x = document.getElementById('angrytextPanel');
+            if( x.innerHTML == "Identify why and delay your reaction. http://www.lifehack.org/articles/communication/20-things-when-you-feel-extremely-angry.html"){
+              x.innerHTML = "";
+            }
+            else{
+              x.innerHTML = "Identify why and delay your reaction. http://www.lifehack.org/articles/communication/20-things-when-you-feel-extremely-angry.html";
+            }
+            }
+            </script>
+            <!--  end of angry button -->
+
+            <!--  tired button -->
+            <div id="tiredbuttonPanel" class="tiredbuttonPanel" align="left">
+              <button onclick="myTiredFunction()"> <img src="img/tired.png" height=100px width=105px></button>
+            </div>
+
+            <div id="tiredtextPanel" class="tiredtextPanel" align="right">
+            </div>
+
+            <script>
+            function myTiredFunction() {
+                var x = document.getElementById('tiredtextPanel');
+            if( x.innerHTML == "Take a quick nap.  https://tinybuddha.com/blog/how-to-deal-with-exhaustion-10-tips-to-function-better-when-youre-tired/"){
+              x.innerHTML = "";
+            }
+            else{
+              x.innerHTML = "Take a quick nap.  https://tinybuddha.com/blog/how-to-deal-with-exhaustion-10-tips-to-function-better-when-youre-tired/";
+            }
+            }
+            </script>
+
+
+    <section class="probootstrap-section probootstrap-bg-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 probootstrap-animate">
+            <form method="post" class="probootstrap-form">
+              <div class="row">
+                <div class="col-md-4">
+              <!-- END row -->
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="form-group">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="probootstrap-section probootstrap-bg-white" data-section="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5 text-center probootstrap-animate">
+            <div class="probootstrap-heading dark">
+              <h1 class="primary-heading">About Us</h1>
+              <h3 class="secondary-heading">Girls Who Code</h3>
+            </div>
+            <p>Hello! We're Harshitha Arul Murugan and Saasha Mane, the creators of Emitime! In the summer of 2017, we were selected to participate in the Girls Who Code Summer Immersion Program,in which we developed Emitime. We are passionate about programming, web design, and wanted to develop a tool to help students like us manage their time efficiently, while incorporating the idea of self-help. Not only does Emitime help you manage your time well, but also manage your own health and well-being. We hope you enjoy our project, and don't hesitate to reach out to us! You can find us on LinkedIn <a href="https://www.linkedin.com/in/harshitha-arul-murugan-203140142/">here</a> and  <a href="https://www.linkedin.com/in/saasha-mane-678140142/">here.</a></p>
+          </div>
+          <div class="col-md-6 col-md-push-1 probootstrap-animate">
+            <form method="post" class="probootstrap-form">
+              <div class="form-group" position="absolute">
+                <h3> Talk to us!</h3>
+                <h6> We'd love to hear your thoughts and feedback.</h6>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdEdAnV0dgZQiomHtTaVwLEtvsp0MgG8BQH0u0_Vv_SCXj1vw/viewform?embedded=true" width="500" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="probootstrap-copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <p class="copyright-text">&copy; 2017 <a href="https://probootstrap.com/">Emitime</a>. All Rights Reserved.</p>
+          </div>
+          <div class="col-md-4">
+            <ul class="probootstrap-footer-social right">
+              <li><a href="#"><i class="icon-twitter"></i></a></li>
+              <li><a href="#"><i class="icon-facebook"></i></a></li>
+              <li><a href="#"><i class="icon-instagram"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/scripts.min.js"></script>
+    <script src="js/custom.min.js"></script>
+
+  </body>
+</html>
