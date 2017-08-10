@@ -442,13 +442,21 @@
 
             <!--  sad button -->
             <div id="sadbuttonPanel" class="sadbuttonPanel" align="left">
-              <button onclick="msf()"> <img src="img/sadguy.png" height=85px width=105x></button>
+              <button onclick="mySadFunction()"> <img src="img/sadguy.png" height=85px width=105x></button>
             </div>
 
             <div id="sadtextPanel" class="sadtextPanel" align="right">
             </div>
 
             <script>
+               function mySadFunction() {
+                var x = document.getElementById('sadtextPanel');
+            if( x.innerHTML == "sad"){
+              x.innerHTML = "";
+            }
+            else{
+              x.innerHTML = "sad"){
+            }
 
             </script>
             <!--  end of sad button -->
