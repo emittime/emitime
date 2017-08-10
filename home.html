@@ -423,17 +423,20 @@
               }
               }
 
-              function msf() {
+              function mySadFunction() {
                   var x = document.getElementById('sadtextPanel');
+                  console.log("Running the function.");
                   // var btn = document.createElement("BUTTON");
                 //  document.body.appendChild(btn);
 
                   if( x.innerHTML == "Remember that this too, shall pass. If you want to lighten up your mood, make a list of things you are grateful for. You can find more tips at:  at: https://www.buzzfeed.com/hnigatu/things-to-do-when-youre-feeling-down?utm_term=.dlLVNO5Wp2#.vr7RL7oj1P")
                   {
+                    console.log("Toggling off");
                     x.innerHTML = "";
 
                   }
                   else{
+                    console.log("Toggling on.");
                     x.innerHTML = "Remember that this too, shall pass. If you want to lighten up your mood, make a list of things you are grateful for. You can find more tips at: https://www.buzzfeed.com/hnigatu/things-to-do-when-youre-feeling-down?utm_term=.dlLVNO5Wp2#.vr7RL7oj1P";
                   }
               }
