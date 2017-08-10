@@ -426,23 +426,23 @@
             <!--  end of happy button -->
 
             <!--  sad button -->
-            <div id="sadbuttonPanel" class="sadbuttonPanel" align="left">
-              <button onclick="mySadFunction()"> <img src="img/sadguy.png" height=85px width=105x></button>
+            <div id="angrybuttonPanel" class="angrybuttonPanel" align="left">
+              <button onclick="myAngryFunction()"> <img src="img/angry.png" height=90px width=105x></button>
             </div>
 
-            <div id="sadtextPanel" class="sadtextPanel" align="right">
+            <div id="angrytextPanel" class="angrytextPanel" align="right">
             </div>
 
             <script>
-               function mySadFunction() {
-                var x = document.getElementById('sadtextPanel');
-            if( x.innerHTML == "sad"){
+            function myAngryFunction() {
+                var x = document.getElementById('angrytextPanel');
+            if( x.innerHTML == "Anger is one of the most important emotions we have, because it tells us that something needs to change right now. Firstly, let it happen. Suppressing anger is unhealthy and can lead to ulcers. If you attempt to hide or ignore your anger, it won’t go away. It might subside for a certain amount of time, but eventually it will manifest itself elsewhere. Don’t apologize for or excuse your anger. Acknowledging it is the first step. It's also imperative to separate your emotions from actions.  Prematurely deciding to take action may cause more angst than waiting to give perspective to your anger. Also, a great outlet to reduce tension is physical activity: use your anger as fuel for a healthier lifestyle. Next, if you’re in a situation where dealing with your anger immediately isn’t an option, inhale deeply to delay your reaction. You could also turn your attention elsewhere, as it will help you focus on the present moment and prioritize your emotions. Another tip is to do your homework. It may sound strange, but nothing diffuses anger like logic! You can find more tips here: http://www.lifehack.org/articles/communication/20-things-when-you-feel-extremely-angry.html"){
               x.innerHTML = "";
             }
             else{
-              x.innerHTML = "sad");
+              x.innerHTML = "Anger is one of the most important emotions we have, because it tells us that something needs to change right now. Firstly, let it happen. Suppressing anger is unhealthy and can lead to ulcers. If you attempt to hide or ignore your anger, it won’t go away. It might subside for a certain amount of time, but eventually it will manifest itself elsewhere. Don’t apologize for or excuse your anger. Acknowledging it is the first step. It's also imperative to separate your emotions from actions.  Prematurely deciding to take action may cause more angst than waiting to give perspective to your anger. Also, a great outlet to reduce tension is physical activity: use your anger as fuel for a healthier lifestyle. Next, if you’re in a situation where dealing with your anger immediately isn’t an option, inhale deeply to delay your reaction. You could also turn your attention elsewhere, as it will help you focus on the present moment and prioritize your emotions. Another tip is to do your homework. It may sound strange, but nothing diffuses anger like logic! You can find more tips here: http://www.lifehack.org/articles/communication/20-things-when-you-feel-extremely-angry.html";
             }
-
+            }
             </script>
             <!--  end of sad button -->
 
